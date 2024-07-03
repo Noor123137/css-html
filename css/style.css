@@ -1,0 +1,799 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.header{
+    width:100% ;
+    height: 40px;
+   background-color: antiquewhite;
+   position: fixed;
+   z-index: 10;
+   opacity: 0.9;
+}
+.header-img{ 
+width: 80px;
+height: 40px;
+margin-left: 60px;
+float: left;
+}
+.header-list li{
+display: inline-block;
+margin-left: 20px;
+margin-top: 8px;
+font-size: 18px;
+font-weight: bolder;
+text-transform: capitalize;
+}
+.header-list{
+    float:right;
+   margin-right: 150px;
+}
+.header-list li a{
+color: black;
+text-decoration: none;
+
+}
+
+
+.home{ 
+   height: 100vh; 
+   background-image: url(../images/Basically-Coffee-0219-03.webp);
+   position: relative;
+}
+.home-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.6)
+    
+
+}
+.home-content{
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.home-tittie{
+color: rgb(255, 255, 255);
+font-size: 70px;
+
+}
+.home-p{
+    margin: 20px 0px;
+    color: rgb(140, 142, 143);
+    font-size: 25px;
+}
+.btn{
+    width: 150px;
+    padding: 15px 0px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 17px;
+
+}
+.home-btn-order{
+margin-right: 10px;
+background-color: rgb(234, 175, 97);
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+
+.general{
+    width: 100%;
+    height: 95vh;
+    
+    text-align: center;
+    position: absolute;
+}
+.general-tittle{
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.general-line{
+    width: 150px;
+    height: 5px;
+    background-color: rgb(250, 172, 47);
+    margin: auto;
+    margin-top: 20px;
+}
+.odd{
+   width: 350px;
+   height: 225px;
+    border: 1px solid gray;
+   float: left; 
+   margin-top: 50px;
+   margin-left: 40px;
+   text-align: center;
+   position: relative;
+   
+}
+.parant-general{
+    margin-left: 150px;
+}
+
+.ccd{
+    font-size: 25px;
+    margin-top:25px;
+    color: rgb(254, 176, 60);
+
+}
+.general-tittle1{
+text-transform: capitalize;
+margin-top: 10px;
+margin-bottom: 5px;
+
+}
+.genral-p{
+   
+}
+.general-a{
+    text-decoration: none;
+    color: rgb(255, 153, 0);
+}
+.odd::after{
+position: absolute;
+content: "";
+width: 0;
+height: 0;
+ top:0;
+ left:0;
+  
+ background-color: rgb(255, 225, 54);
+ opacity: 0;
+}
+
+.odd:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: 0.5s;
+    
+}
+
+
+.general-tittle1:hover{
+color: rgb(222, 222, 222);
+    
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
+.work{
+    
+    width: 100%;
+    height: 150vh;
+  background-color: rgb(255, 253, 164);
+    text-align: center;
+    position: absolute;
+    margin-top: 650px;
+    
+}
+
+
+.work-tittle{
+margin-top: 100px;
+font-size: 50px;
+font-weight: bolder;
+
+}
+
+.work-line{
+    width: 80px;
+    height: 5px;
+    background-color: rgb(250, 172, 47);
+     margin: auto;
+     margin-top: 15px;
+
+}
+.ott{
+border: 1px dotted grey;
+width: 300px;
+height: 350px;
+margin-top: 50px;
+margin-left: 160px;
+float: left;
+text-align: center;
+position: relative;
+background-color: rgb(255, 255, 255);
+
+
+
+
+}
+.iim{
+margin-top: 20px;
+
+}
+ /*.ott::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+   
+   
+      
+     background-color: rgb(82, 80, 78);
+     opacity: 0;
+    }
+    
+    .ott:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        transition: 1s;
+        
+    }*/
+    .work-info-d{
+      position: absolute;
+      top: 0; 
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      visibility: hidden;
+     
+
+    }
+    .ott:hover  .work-info-d{
+        visibility: visible;
+    
+    }
+    .ff{
+        color: aliceblue;
+    }
+    .aa{
+        color: rgb(255, 145, 0);
+        
+        font-size: 20px;
+    }
+    .ffg{
+        color: rgb(255, 145, 0); 
+        font-size: 18px;
+    }
+    /*////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .offer{
+        width: 100%;
+        height: 90vh;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        position: absolute;
+        margin-top: 1780px;
+    }
+    .offer-tittle{
+font-size: 40px;
+margin-top: 60px;
+
+    }
+    .offer-line{
+        width: 120px;
+        height: 5px;
+        background-color: rgb(250, 172, 47);
+        margin: auto;
+        margin-top: 20px;
+    }
+    .titt-of{
+        display: inline;
+    }
+    .offer-son{
+        border: 1px solid grey;
+        width: 350px;
+        height: 200px;
+        float: left;
+        margin-top: 50px;
+        margin-left: 120px;
+        text-align: left;
+        position: relative;
+    }
+    .cc{
+margin-top: 25px;
+margin-left: 20px;
+font-size: 30px;
+color: rgb(255, 187, 0);
+
+    }
+    .p-of{
+margin-left: 20px;
+margin-top: 30px;
+
+    }
+    .offer-son::after{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+         top:0;
+         left:0;
+          
+         background-color: rgb(255, 225, 54);
+         opacity: 0;
+        }
+        
+       .offer-son:hover::after{
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+            transition: 0.5s;
+            
+        }
+        /*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+        .choose{
+            
+            width: 100%;
+            height: 85vh;
+            margin-top: 2500px;
+            position: absolute;
+        }
+        .choose-parent{
+           width: 600px;
+           height: 500px;
+           margin-top: 50px;
+           margin-left: 120px;
+           float: left;
+           
+        }
+        .choose-parent-tittle{
+           padding-top: 50px;
+           font-size: 40px;
+        
+        }
+        .choose-parent{
+         margin-top: 50px;
+
+        }
+        .choose-line{
+            width: 160px;
+            height: 5px;
+            background-color: rgb(250, 172, 47);
+             
+             margin-top: 5px;
+        
+        }
+        .err{
+           font-size: 18px;
+
+        }
+        .exx{
+
+            color: rgb(255, 145, 0);
+        }
+        .choose-img{
+           width: 400px;
+           height: 500px;
+           background-image: url(../images/coffee-landov-16764161_h15046979_custom-b658d299c4f60375aff8ab9768ebe91aca51667a-s900-c85.jpg);
+           background-size: cover;
+           float: left;
+           margin-left: 50px;
+           
+
+        } 
+        .choose-img i {
+          color: rgb(255, 187, 0);
+          margin-top: 500px;
+          margin-left: 50px  
+          }
+
+          /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+            
+
+          .happy{
+           width: 100%;
+           height: 100vh;
+           margin-top: 3100px;
+           background-image: url(../images/GettyImages-936840910-5c8ea8b2c9e77c0001ff0ae6.jpg);
+           background-attachment: fixed;
+        position: absolute;
+        
+       
+          }
+          .happy-parent{
+             width: 100%;
+             height: 45vh;
+             top: 0;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             background-color:rgba(0, 0, 0, 0.7);
+            position: absolute;
+
+
+          }
+          .happy-son{
+           width: 200px;
+           height: 200px;
+           text-align: center;
+           
+          margin-top: 40px;
+           
+ position: relative;
+ float: left;
+ margin-left: 140px;
+          }
+          .ccx{
+            color: rgb(255, 153, 0);
+            font-size: 40px;
+          }
+          .happy-tittle{
+            color: aliceblue;
+            font-size: 35px;
+
+          }
+          .happy-p{
+            color: aliceblue;
+          }
+          .happy-table{
+            width: 100%;
+            height: 700px;
+            background-color:white;
+            position: absolute;
+            margin-top:340px;
+            text-align: center;
+          }
+          .happy-table-tittle{
+            font-size: 40px;
+            text-transform: capitalize;
+            margin-top: 120px;
+          }
+          .happy-line{
+            width: 120px;
+            height: 5px;
+            background-color: rgb(250, 172, 47);
+             margin-left: 700px;
+             margin-top: 10px;
+             
+          }
+          .son-cc{
+            width: 300px;
+            height: 360px;
+            text-align: center;
+            border: 1px solid grey;
+           margin-top: 40px;
+            
+  position: relative;
+  float: left;
+  margin-left: 155px;
+
+          }
+          .uu{
+            font-size: 20px;
+          }
+          .darraa-son-cc{
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgb(123, 255, 0) ;
+            border-radius: 100px;
+            margin-left: 100px;
+            font-size: 25px;
+
+
+          }
+          .cc-ssc{
+            width: 100px;
+            
+            border: 2px solid rgb(255, 0, 0);
+            margin-left: 100px;
+          }
+          .son-cc::after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0;
+             top: 0;
+             left:0;
+              
+             background-color: rgb(255, 225, 54);
+             opacity: 0;
+            }
+            
+           .son-cc:hover::after{
+                width: 100%;
+                height: 100%;
+                opacity: 0.6;
+                transition: 1s;
+                
+            }
+            /*///////////////////////////////////////////////////////////////////////////////////*/
+                
+            
+            .pp-coffee{
+              width: 100%;
+              height:100vh;
+              position: relative;
+              background-image:url(../images/How_To_Start_A_Coffee_Shop_-_article_image.webp);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-attachment: fixed;
+              margin-top: 4100px;
+
+            }
+            .pp-coffee-parent{
+                width: 100%;
+                height: 45vh;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color:rgba(0, 0, 0, 0.7);
+               position: absolute;
+
+            }
+            .pp-coffee-parent-son{
+            width: 50%;
+            height:45vh ;
+           
+            float: left;
+
+            }
+            .coffee-parent-son-img{
+               
+                width: 100px;
+                height: 100px;
+                border-radius: 100px;
+              background-image: url(../images/76c934312a3cbc19365a63ca3e669785.jpg);
+              background-size: cover;
+              float: left;
+              margin-top: 120px;
+              margin-left: 140px;
+             
+
+
+
+            }
+            
+            
+            .coff-cc{
+             
+               color: rgb(255, 255, 255);
+              width: 200px;
+              height: 100px;
+             float: right;
+             margin-right: 300px;
+             margin-top: 140px;
+             
+
+            }
+            .cc-co-css{
+              color: rgb(213, 164, 90);
+            }
+            .bb-co{
+               margin-left: 100px;
+               margin-top: 240px;
+               color: rgb(255, 255, 255);
+            }
+           /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+           .our{
+              width:100%;
+              height:220vh;
+              background-color: blue;
+              
+              margin-top: 338px;
+              
+           }
+           .team{
+              width: 100%;
+              height: 600px;
+              background-color: rgb(255, 255, 255);
+              text-align: center; position: relative;
+              
+           }
+           .team-titt{
+             padding-top: 70px;
+              font-size: 40px; 
+             
+
+           }
+           .team-line{
+            width: 120px;
+            height: 5px;
+            background-color: rgb(250, 172, 47);
+             margin-left: 700px;
+             margin-top: 10px;
+           }
+           .team-items{
+             
+             background-color: rgb(248, 224, 176);
+             float: left;
+             margin-top: 60px;
+             width:300px;
+             margin-left: 155px;
+             height: 320px;
+             position: relative;
+            
+            
+            
+
+           }
+          .team-img{
+           margin: auto;
+           width: 80%;
+          
+          margin-top: 30px;
+           position: relative;
+ background-size: cover;
+          }
+          .team-img-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0; 
+          }
+            .team-img-overlay
+              {
+              position: absolute;
+              top: 0; 
+              right: 0;
+              left: 0;
+              bottom: 0;
+              background-color: rgba(0, 0, 0, 0.5);
+              
+              visibility: hidden;
+             
+        
+            }
+           .team-items:hover   .team-img-overlay {
+                visibility: visible;
+            
+          }
+
+          .team-items::after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0;
+             top: 0;
+             left:0;
+              
+             background-color: rgba(18, 17, 17, 0.5);
+             opacity: 0;
+            }
+            
+            .team-items:hover::after{
+                width: 100%;
+                height: 100%;
+                opacity: 0.6;
+                transition: 1s; 
+            }
+            .team-img-overlay  a{
+              display: block;
+              width: 40px;
+              height: 40px;
+              background-color: rgb(255, 162, 0);
+              color: rgb(255, 255, 255);
+              padding-top: 10px;
+              margin-left: auto;
+            }
+            .team-infor-p{
+               color: rgb(14, 9, 4);
+               font-size: 20px;
+
+            }
+            .team-items:hover  .team-infor-titt{
+              color: rgb(255, 255, 255);
+             
+            }
+            .team-items:hover  .team-infor-p{
+              color: rgb(255, 111, 0);
+
+            }
+            /*/////////////////////////////////////////////////////////////////////*/
+            .news{
+             width: 100%;
+             height: 800px;
+             background-color: rgb(255, 255, 255);
+             text-align: center;
+
+            } 
+            .news-parent{
+               margin-left: 90px;
+
+            }
+            .news-tittle{
+              font-size: 40px;
+              padding-top: 100px;
+
+            }
+            .line-news{
+              width: 120px;
+              height: 5px;
+              background-color: rgb(250, 172, 47);
+               margin-left: 700px;
+               margin-top: 20px;
+
+            }
+            .news-son{
+              width: 350px;
+              height: 579px;
+              background-color: rgb(255, 255, 255);
+              margin-top: 50px;
+              float: left;
+              margin-left: 70px;
+              position: relative;
+             
+
+
+            }
+            .news-img{
+              margin-left: -130px;
+            }
+            .news-p{
+          margin-left: -85px;
+
+            }
+            .news-p i {
+              color: rgb(255, 157, 0);
+            }
+            .news-son-tittle{
+              margin-left:-80px;
+            }
+            .bbcc{
+              margin-left: 20px;
+
+            }
+           .news-son  a{
+            margin-left:-220px;
+            text-decoration: none;
+            color: rgb(255, 145, 0);
+            font-size: 20px;
+            }
+            .news-son::after{
+              position: absolute;
+              content: "";
+              width: 100%;
+              height: 0;
+               top: 0;
+               left:0;
+                
+               background-color: rgba(0, 0, 0, 0.7);
+               opacity: 0;
+              }
+              
+              .news-son:hover::after{
+                  width: 100%;
+                  height: 100%;
+                  opacity: 0.6;
+                  transition: 1s; 
+              }
+              /*//////////////////////////////////////////////////////////////////////////////*/
+              .final{
+                width: 100%;
+                height: 300px;
+                background-color: rgb(134, 134, 134);
+                text-align: center;
+                position: relative;
+                
+              }
+              .final-parent{
+                background-color:rgb(134, 134, 134);
+                width: 50%;
+                height: 250px;
+                margin-left: 370px;
+                margin-top: 30px;
+                position: absolute;
+              }
+              .final-parent i{
+                color: rgb(255, 141, 48);
+                font-size: 40px;
+
+              }
+              .final-parent p{
+                font-size:10px;
+                color: rgb(87, 87, 87);
+              }
+
+            
+
+
